@@ -92,7 +92,7 @@ const Home = () => {
                     </div>
                     <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-4 mt-16">
                         <div className="bg-slate-100 text-center p-5">
-                            <img className='mx-auto mb-5' src="/src/assets/Icons/accounts 1.png" alt="" />
+                            <img className='mx-auto mb-5' src="/src/assets/All Images/google-1-1 1.png" alt="" />
                             <h1 className="text-2xl font-bold">Account & Finance</h1>
                             <p className="text-gray"><small>300 Jobs Available</small></p>
                         </div>
