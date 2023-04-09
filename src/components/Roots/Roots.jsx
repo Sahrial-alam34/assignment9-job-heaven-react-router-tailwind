@@ -1,9 +1,11 @@
 import React from 'react';
 import Header from '../Header/Header';
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLoaderData } from 'react-router-dom';
 import Footer from '../Footer/Footer';
 
+
 const Roots = () => {
+   
     return (
         <div>
             <Header></Header>

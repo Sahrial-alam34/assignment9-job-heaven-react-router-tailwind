@@ -12,15 +12,19 @@ import Statistics from './components/Statistics/Statistics';
 import AppliedJobs from './components/AppliedJobs/AppliedJobs';
 import Blogs from './components/Blogs/Blogs';
 import StartApplied from './components/StartApplied/StartApplied';
+import ErrorPage from './components/Error-Page/ErrorPage';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Roots></Roots>,
+    errorElement: <ErrorPage />,
+    
     children:[
       {
         path: '/',
-        element:<Home></Home>
+        element:<Home></Home>,
+        loader:()=>fetch('features.json'),
         
       },
       {
