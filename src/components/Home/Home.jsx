@@ -1,13 +1,20 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
 import Lottie from "lottie-react";
 import jobHunt from '../../assets/Animation/103199-hiring-pt-2.json'
 import HomeFeature from '../HomeFeature/HomeFeature';
+import HomeFindJob from '../HomeFindJob/HomeFindJob';
 
 
 const Home = () => {
     const features = useLoaderData();
     // console.log('home',features)
+    const [findJobs, setFindJobs] = useState([]);
+    useEffect(() => {
+        fetch('jobList.json')
+            .then(res => res.json())
+            .then(data => setFindJobs(data));
+    }, [])
     return (
         <>
             {/* banner section */}
@@ -56,27 +63,16 @@ const Home = () => {
                         </p>
 
                     </div>
-                    <div className="grid sm:grid-cols-1 lg:grid-cols-4 gap-4 mt-16">
-                        <div className="bg-slate-100 text-center p-5">
-                            <img className='mx-auto mb-5' src="/src/assets/Icons/accounts 1.png" alt="" />
-                            <h1 className="text-2xl font-bold">Account & Finance</h1>
-                            <p className="text-gray"><small>300 Jobs Available</small></p>
-                        </div>
-                        <div className="bg-slate-100 text-center p-5">
-                            <img className='mx-auto mb-5' src="/src/assets/Icons/business 1.png" alt="" />
-                            <h1 className="text-2xl font-bold">Creative Design</h1>
-                            <p className="text-gray"><small>100+ Jobs Available</small></p>
-                        </div>
-                        <div className="bg-slate-100 text-center p-5">
-                            <img className='mx-auto mb-5' src="/src/assets/Icons/social-media 1.png" alt="" />
-                            <h1 className="text-2xl font-bold">Marketing & Sales</h1>
-                            <p className="text-gray"><small>150 Jobs Available</small></p>
-                        </div>
-                        <div className="bg-slate-100 text-center p-5">
-                            <img className='mx-auto mb-5' src="/src/assets/Icons/chip 1.png" alt="" />
-                            <h1 className="text-2xl font-bold">Engineering Job</h1>
-                            <p className="text-gray"><small>224 Jobs Available</small></p>
-                        </div>
+                    <div className="grid sm:grid-cols-1 lg:grid-cols-4 gap-4 mt-16 ">
+                        {
+                            
+                            findJobs.map(findJob =><HomeFindJob
+                            key={findJob.id}
+                            findJob={findJob}
+                            ></HomeFindJob>)
+                        }
+
+
 
                     </div>
                 </>
@@ -94,14 +90,14 @@ const Home = () => {
 
                     </div>
                     <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-4 mt-16">
-                       {
-                        features.map(feature=><HomeFeature
-                        key={feature.id}
-                        feature={feature}
-                        ></HomeFeature>)
-                       }
-                       
-                       
+                        {
+                            features.map(feature => <HomeFeature
+                                key={feature.id}
+                                feature={feature}
+                            ></HomeFeature>)
+                        }
+
+
 
                     </div>
                 </>
