@@ -9,11 +9,11 @@ const HomeFeature = ({ feature }) => {
    
     
     return (
-        <div className="bg-slate-100 p-5">
+        <div className="bg-slate-100 p-5 text-left">
             <img className=' mb-5' src={picture} alt="" />
             <h1 className="mt-10 text-2xl font-bold">{title}</h1>
             <p className="mt-10 text-gray">{name}</p>
-            <div className='mt-10 flex justify-between'>
+            <div className='mt-10 flex gap-5 mb-5'>
                 {
                     type.map((pd, index) => (
                         <div key={index}>
