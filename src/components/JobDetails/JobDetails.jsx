@@ -12,9 +12,13 @@ const JobDetails = () => {
         console.log('all',allJobData)
         
         const find = allJobData.find(data=>data.id === jobDetail.jobId);
-        setJobInfo(find);
+        if(find){
+            setJobInfo(find);
+        }
+       
        
     },[])
+   
     
     return (
         <div>
