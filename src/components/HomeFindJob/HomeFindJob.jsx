@@ -8,6 +8,7 @@ const HomeFindJob = ({findJob}) => {
             <h1 className="text-2xl font-bold">{findJob.title}</h1>
             <p className="text-gray mt-5"><small>{findJob.availability}</small></p>
         </div>
+        
     );
 };
 
