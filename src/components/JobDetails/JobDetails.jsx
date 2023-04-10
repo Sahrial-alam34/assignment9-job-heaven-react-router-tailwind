@@ -37,7 +37,7 @@ const JobDetails = () => {
                 <div className=' bg-cyan-100  flex-auto w-[30%] p-10'>
                     <div>
                         <p className='font-bold mb-5'>Job Details</p>
-                        <hr  className='border-solid border-cyan-700' />
+                        <hr className='border-solid border-cyan-700' />
                         <div>
                             <div className='flex gap-3 mt-4'>
                                 <img src="/src/assets/Icons/Frame.png" alt="" />
@@ -54,7 +54,7 @@ const JobDetails = () => {
 
                     <div className='mt-10'>
                         <p className='font-bold mb-5'>Contact Information</p>
-                        <hr  className='border-solid border-cyan-700' />
+                        <hr className='border-solid border-cyan-700' />
                         <div>
                             <div className='flex gap-3 mt-4'>
                                 <img src="/src/assets/Icons/Frame-2.png" alt="" />
@@ -71,18 +71,24 @@ const JobDetails = () => {
                                 <p><span className='font-bold'>Address:</span> <small>{jobInfo.address}</small></p>
 
                             </div>
+
                         </div>
+
+
                     </div>
 
+
                 </div>
+
             </div>
 
-            {/* <Link
-                    to='/'
-                    className='px-8 py-3 font-semibold rounded bg-cyan-200 text-gray-900'
-                >
-                    Back to homepage
-                </Link> */}
+            <div className='text-right'>
+                <Link >
+                    <button type='button' className='btn-primary w-[350px]'>
+                        View Details
+                    </button>
+                </Link>
+            </div>
             <div className='mt-20'>
                 <a href="/" className='px-8 py-3 font-semibold rounded bg-cyan-200 text-gray-900'>
                     Back to homepage
