@@ -4,17 +4,22 @@ import Lottie from "lottie-react";
 import jobHunt from '../../assets/Animation/103199-hiring-pt-2.json'
 import HomeFeature from '../HomeFeature/HomeFeature';
 import HomeFindJob from '../HomeFindJob/HomeFindJob';
+import JobDetails from '../JobDetails/JobDetails';
 
 
 const Home = () => {
     const features = useLoaderData();
-    // console.log('home',features)
+    //console.log('home',features)
     const [findJobs, setFindJobs] = useState([]);
     useEffect(() => {
         fetch('jobList.json')
             .then(res => res.json())
             .then(data => setFindJobs(data));
     }, [])
+
+    // const handleDetailsButton = (feature) => {
+    //     console.log('clicked', feature)
+    // }
     return (
         <>
             {/* banner section */}
@@ -51,7 +56,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-
+          
             {/* job category list */}
             <section className="container mx-auto lg:px-32 mb-28 mt-20">
                 <>
@@ -65,10 +70,10 @@ const Home = () => {
                     </div>
                     <div className="grid sm:grid-cols-1 lg:grid-cols-4 gap-4 mt-16 ">
                         {
-                            
-                            findJobs.map(findJob =><HomeFindJob
-                            key={findJob.id}
-                            findJob={findJob}
+
+                            findJobs.map(findJob => <HomeFindJob
+                                key={findJob.id}
+                                findJob={findJob}
                             ></HomeFindJob>)
                         }
 
@@ -94,12 +99,14 @@ const Home = () => {
                             features.map(feature => <HomeFeature
                                 key={feature.id}
                                 feature={feature}
+                                // handleDetailsButton={handleDetailsButton}
                             ></HomeFeature>)
                         }
 
 
 
                     </div>
+
                 </>
             </section>
             <div>

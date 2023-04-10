@@ -13,6 +13,7 @@ import AppliedJobs from './components/AppliedJobs/AppliedJobs';
 import Blogs from './components/Blogs/Blogs';
 import StartApplied from './components/StartApplied/StartApplied';
 import ErrorPage from './components/Error-Page/ErrorPage';
+import JobDetails from './components/JobDetails/JobDetails';
 
 const router = createBrowserRouter([
   {
@@ -28,21 +29,30 @@ const router = createBrowserRouter([
         
       },
       {
-        path: '/statistics',
+        path: 'jobDetails/:jobId',
+        element: <JobDetails></JobDetails>,
+        loader:()=>fetch('features.json'),
+        
+        
+      
+      },
+      {
+        path: 'statistics',
         element:<Statistics></Statistics>
       },
       {
-        path: '/appliedJob',
+        path: 'appliedJob',
         element: <AppliedJobs></AppliedJobs>
       },
       {
-        path: '/blogs',
+        path: 'blogs',
         element: <Blogs></Blogs>
       },
       {
-        path: '/startApplied',
+        path: 'startApplied',
         element: <StartApplied></StartApplied>
-      }
+      },
+     
     ]
   },
 ]);
