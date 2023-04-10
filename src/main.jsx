@@ -14,6 +14,7 @@ import Blogs from './components/Blogs/Blogs';
 import StartApplied from './components/StartApplied/StartApplied';
 import ErrorPage from './components/Error-Page/ErrorPage';
 import JobDetails from './components/JobDetails/JobDetails';
+import { cartData } from './loaders/getCartData';
 
 const router = createBrowserRouter([
   {
@@ -42,7 +43,8 @@ const router = createBrowserRouter([
       },
       {
         path: 'appliedJob',
-        element: <AppliedJobs></AppliedJobs>
+        element: <AppliedJobs></AppliedJobs>,
+        loader: cartData,
       },
       {
         path: 'blogs',

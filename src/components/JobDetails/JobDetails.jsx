@@ -1,13 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLoaderData, useParams } from 'react-router-dom';
+import { addToDb } from '../utilities/fakebd';
 
 const JobDetails = () => {
+
     const jobDetail = useParams();
     //console.log('job details', jobDetail.jobId)
     const allJobData = useLoaderData();
     // console.log(allJobData);
     const [jobInfo, setJobInfo] = useState([])
     //console.log('job info', jobInfo)
+
+
+
     useEffect(() => {
         // console.log('all', allJobData)
 
@@ -19,6 +24,10 @@ const JobDetails = () => {
 
     }, [])
 
+    const handleAddToCart = id => {
+        console.log('add to cart', id)
+        addToDb(id);
+    }
 
     return (
         <div>
@@ -27,14 +36,14 @@ const JobDetails = () => {
                     Job Details
                 </h2>
             </div>
-            <div className='container text-left flex gap-10 '>
-                <div className='bg-slate-100 flex-auto w-[70%] p-10'>
+            <div className='container text-left lg:flex gap-10 '>
+                <div className='bg-slate-100 flex-auto lg:w-[70%] p-10'>
                     <p><span className='font-bold '>Job Description:</span> <small>{jobInfo.jobDescription}</small></p>
                     <p className='mt-5'><span className='font-bold'>Job Responsibility:</span> <small>{jobInfo.jobResponsibility}</small></p>
                     <p className='mt-5'><span className='font-bold'>Educational Requirements::</span> <small>{jobInfo.educationRequirements}</small></p>
                     <p className='mt-5'><span className='font-bold'>Experiences:</span> <small>{jobInfo.exprience}</small></p>
                 </div>
-                <div className=' bg-cyan-100  flex-auto w-[30%] p-10'>
+                <div className=' bg-cyan-100  flex-auto lg:w-[30%] p-10'>
                     <div>
                         <p className='font-bold mb-5'>Job Details</p>
                         <hr className='border-solid border-cyan-700' />
@@ -83,11 +92,11 @@ const JobDetails = () => {
             </div>
 
             <div className='text-right'>
-                <Link >
-                    <button type='button' className='btn-primary w-[350px]'>
-                        View Details
-                    </button>
-                </Link>
+
+                <button onClick={() => handleAddToCart(jobInfo.id)} type='button' className='btn-primary w-full lg:w-[350px]'>
+                    Apply Now
+                </button>
+
             </div>
             <div className='mt-20'>
                 <a href="/" className='px-8 py-3 font-semibold rounded bg-cyan-200 text-gray-900'>

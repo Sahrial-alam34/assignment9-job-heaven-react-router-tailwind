@@ -5,9 +5,9 @@ import JobDetails from '../JobDetails/JobDetails';
 
 const HomeFeature = ({ feature }) => {
     // console.log('home',feature)
-    const {picture,title,name,type,location,salary,id} = feature;
-   
-    
+    const { picture, title, name, type, location, salary, id } = feature;
+
+
     return (
         <div className="bg-slate-100 p-5 text-left">
             <img className=' mb-5' src={picture} alt="" />
@@ -29,8 +29,15 @@ const HomeFeature = ({ feature }) => {
             <p className="text-gray"><small>{feature.type[1]}</small></p> */}
             </div>
             <div className='flex justify-between mb-5'>
-                <p className="text-gray"><small>{location}</small></p>
-                <p className="text-gray"><small>{salary}</small></p>
+                <div className='flex gap-3 mt-4'>
+                    <img src="/src/assets/Icons/Frame-4.png" alt="" />
+                    <p className="text-gray"><small>{location}</small></p>
+                </div>
+                <div className='flex gap-3 mt-4'>
+                    <img src="/src/assets/Icons/Frame.png" alt="" />
+                    <p className="text-gray"><small>{salary}</small></p>
+                </div>
+
             </div>
             <>
                 <Link to={`/jobDetails/${id}`}>

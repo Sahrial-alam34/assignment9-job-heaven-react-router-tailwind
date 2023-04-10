@@ -39,7 +39,7 @@ const ErrorPage = () => {
             {error?.message}
           </p>
           <Link
-            to='/sta'
+            to='/'
             className='px-8 py-3 font-semibold rounded bg-cyan-200 text-gray-900'
           >
             Back to homepage
