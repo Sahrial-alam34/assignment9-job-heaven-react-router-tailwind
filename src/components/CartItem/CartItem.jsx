@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 
 const CartItem = ({ jobInfo }) => {
-    console.log(jobInfo);
+    //console.log(jobInfo);
     const { id, title, picture, location, name, type, salary } = jobInfo
 
     return (

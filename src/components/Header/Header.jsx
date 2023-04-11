@@ -61,7 +61,7 @@ const Header = () => {
             </NavLink>
           </li>
         </ul>
-        <Link to='/startApplied'>
+        <Link to='/'>
               <button type='button' className='btn-primary'>
                 Start Applying
               </button>

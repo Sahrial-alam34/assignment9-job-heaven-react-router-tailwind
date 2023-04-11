@@ -20,6 +20,10 @@ const Home = () => {
     // const handleDetailsButton = (feature) => {
     //     console.log('clicked', feature)
     // }
+    const [showAll, setShowAll] = useState(false);
+    const handleAllJob = ()=>{
+        setShowAll(true);
+    }
     return (
         <>
             {/* banner section */}
@@ -96,7 +100,7 @@ const Home = () => {
                     </div>
                     <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-4 mt-16">
                         {
-                            features.map(feature => <HomeFeature
+                            features.slice(0,showAll? 6 : 4).map(feature => <HomeFeature
                                 key={feature.id}
                                 feature={feature}
                                 // handleDetailsButton={handleDetailsButton}
@@ -110,12 +114,15 @@ const Home = () => {
                 </>
             </section>
             <div>
-                <Link to='' className='btn md:w-auto md:mr-4 btn-primary'>
-                    <div className='inline-flex  items-center justify-center w-full h-full'>
-                        <p className='mr-3'>See All Jobs</p>
+            
+              {
+                 !showAll && ( <Link to='/' onClick={handleAllJob} className='btn md:w-auto md:mr-4 btn-primary'>
+                  <div className='inline-flex  items-center justify-center w-full h-full'>
+                      <p className='mr-3'>See All Jobs</p>
 
-                    </div>
-                </Link>
+                  </div>
+              </Link>)
+              }
             </div>
         </>
 

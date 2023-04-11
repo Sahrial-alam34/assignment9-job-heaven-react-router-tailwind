@@ -66,7 +66,41 @@
     "salary": "200K - 250K",
     "phone":"016897545642",
     "email":"efg@gmail.com"
-    }
+    },
+    {
+        "id": "623858972614ad5aba311fdd5",
+        "index": 4,
+        "title": "Web Developer",
+        "picture": "https://i.ibb.co/p6DSmkm/facebook.png",
+        "name": "FaceBook",
+        "type": ["Remote", "Full Time"],
+        "jobDescription":" A Web Developer is a professional who is responsible for the design and construction of websites. They ensure that sites meet user expectations by ensuring they look good, run smoothly and offer easy access points with no loading issues between pages or error messages.",
+        "jobResponsibility":"This Web Developer job description sample template is optimized for advertising for a website developer on online job boards or careers pages. It is easy to customize with key duties and responsibilities. Feel free to modify this posting to a web designer job description, or for your specific needs.",
+        "educationRequirements":"Bachelor degree to complete any reputational university.",
+        "exprience":"2 Years in this field.",
+        "location": "Dhaka, Bangladesh",
+        "address":" MogBazar, Sukrabad Dhaka, Bangladesh",
+        "salary": "50K - 250K",
+        "phone":"0168975458945",
+        "email":"kpl@gmail.com"
+        },
+        {
+            "id": "623858982614ad5aba311fdd6",
+            "index": 6,
+            "title": "Software Engineer",
+            "picture": "https://i.ibb.co/JRFFzwd/instragram.png",
+            "name": "Instagram",
+            "type": ["Onsite", "Full Time"],
+            "jobDescription":" Software engineers apply principles and techniques of engineering, mathematics, and computer science to the design, development, and testing of software applications for computers.",
+            "jobResponsibility":"Collaborating with cross-functional teams: UI/UX designers often work closely with other teams, including product management, engineering, and marketing, to ensure that the user interface is aligned with business and technical requirements. You will need to be able to effectively communicate your design ideas and gather feedback from other team members.",
+            "educationRequirements":"Bachelor degree to complete any reputational university.",
+            "exprience":"3-5 Years in this field.",
+            "location": "Dhaka, Bangladesh",
+            "address":" Malibag, Sukrabad Dhaka, Bangladesh",
+            "salary": "70K - 250K",
+            "phone":"016897785642",
+            "email":"lpf@gmail.com"
+            }
    
    
     ]

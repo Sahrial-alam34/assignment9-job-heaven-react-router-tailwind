@@ -26,7 +26,7 @@ const JobDetails = () => {
     }, [])
 
     const handleAddToCart = id => {
-        console.log('add to cart', id)
+        //console.log('add to cart', id)
         addToDb(id);
         return toast.success('Job Applied!!!')
     }
