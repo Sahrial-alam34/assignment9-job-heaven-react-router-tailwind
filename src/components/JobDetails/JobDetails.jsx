@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLoaderData, useParams } from 'react-router-dom';
 import { addToDb } from '../utilities/fakebd';
+import { toast } from 'react-hot-toast';
 
 const JobDetails = () => {
 
@@ -27,6 +28,7 @@ const JobDetails = () => {
     const handleAddToCart = id => {
         console.log('add to cart', id)
         addToDb(id);
+        return toast.success('Job Applied!!!')
     }
 
     return (
