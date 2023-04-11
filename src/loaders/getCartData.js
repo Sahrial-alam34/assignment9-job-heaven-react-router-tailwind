@@ -2,7 +2,7 @@ import { getStoredCart } from "../components/utilities/fakebd";
 
 
 export const cartData = async () => {
-    const productData = await fetch('features.json');
+    const productData = await fetch('/features.json');
     const products = await productData.json();
     let cart = [];
     const savedCart = getStoredCart();

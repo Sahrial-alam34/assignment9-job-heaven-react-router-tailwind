@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const CartItem = ({ jobInfo }) => {
     console.log(jobInfo);
@@ -8,18 +9,16 @@ const CartItem = ({ jobInfo }) => {
 
         <li className='flex flex-col py-6 sm:flex-row sm:justify-between bg-gray-100 gap-5 p-5'>
             <div className='flex w-full space-x-2 sm:space-x-4'>
-                <div>
-                    <div className=''>
-                        <img
-                            className='object-cover  w-[91px];
-                            h-[91px]; rounded 
-                            bg-gray-100'
-                            src={picture}
-                            alt='Polaroid camera'
-                        />
-                    </div>
 
+                <div className=' rounded bg-gray-400 w-48 px-3'>
+                    <img
+                        className='object-cover mt-16'
+                        src={picture}
+                        alt='Polaroid camera'
+                    />
                 </div>
+
+
                 <div className='flex flex-col justify-between w-full pb-4'>
                     <div className='flex justify-between w-full pb-2 space-x-2'>
                         <div className='space-y-1'>
@@ -55,7 +54,10 @@ const CartItem = ({ jobInfo }) => {
                             </div>
                         </div>
                         <div className='text-right mt-10'>
-                            <button  className='btn-primary'>View Details</button>
+                            <Link to='/'>
+                               
+                               <button className='btn-primary'>View Details</button>
+                            </Link>
                         </div>
                     </div>
 
