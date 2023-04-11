@@ -1,16 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+
 const CartItem = ({ jobInfo }) => {
     console.log(jobInfo);
     const { id, title, picture, location, name, type, salary } = jobInfo
 
     return (
 
-        <li className='flex flex-col py-6 sm:flex-row sm:justify-between bg-gray-100 gap-5 p-5'>
+        <li className='flex flex-col py-6 sm:flex-row sm:justify-between bg-red-100 gap-5 p-5'>
             <div className='flex w-full space-x-2 sm:space-x-4'>
 
-                <div className=' rounded bg-gray-400 w-48 px-3'>
+                <div className='rounded  lg:bg-gray-400 lg:w-48 lg:px-3'>
                     <img
                         className='object-cover mt-16'
                         src={picture}
@@ -20,12 +21,12 @@ const CartItem = ({ jobInfo }) => {
 
 
                 <div className='flex flex-col justify-between w-full pb-4'>
-                    <div className='flex justify-between w-full pb-2 space-x-2'>
+                    <div className='lg:flex justify-between w-full pb-2 space-x-2'>
                         <div className='space-y-1'>
                             <h3 className='text-lg font-semibold leading-snug sm:pr-8'>
                                 {title}
                             </h3>
-                            <p className='text-sm text-left text-gray-400'>
+                            <p className='text-sm text-left  text-gray-400'>
                                 {name}</p>
                             <div className='mt-10 flex gap-5 mb-5'>
                                 {

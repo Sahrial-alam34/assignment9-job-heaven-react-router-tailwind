@@ -20,7 +20,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Roots></Roots>,
-    // errorElement: <ErrorPage />,
+    errorElement: <ErrorPage />,
     
     children:[
       {
