@@ -17,7 +17,7 @@ const people = [
 const AppliedJobs = () => {
     const [selected, setSelected] = useState(people[0])
     const { cart, products } = useLoaderData();
-    //console.log(cart);
+    console.log(cart);
     // console.log(products);
     // const jData = useLoaderData();
     // //    console.log(jData);
