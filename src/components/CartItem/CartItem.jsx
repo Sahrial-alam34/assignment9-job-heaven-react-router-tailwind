@@ -54,7 +54,7 @@ const CartItem = ({ jobInfo }) => {
                             </div>
                         </div>
                         <div className='text-right mt-10'>
-                            <Link to='/'>
+                            <Link to={`/jobDetails/${id}`}>
                                
                                <button className='btn-primary'>View Details</button>
                             </Link>

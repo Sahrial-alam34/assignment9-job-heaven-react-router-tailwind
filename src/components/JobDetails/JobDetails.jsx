@@ -33,7 +33,7 @@ const JobDetails = () => {
         <div>
             <div className='bg-slate-100 h-32 justify-center mb-20'>
                 <h2 className='text-5xl font-bold mt-25 text-center pt-10 '>
-                    Job Details
+                    Job Details : {jobInfo.name}
                 </h2>
             </div>
             <div className='container text-left lg:flex gap-10 '>

@@ -110,7 +110,7 @@ const Home = () => {
                 </>
             </section>
             <div>
-                <Link to='/blogs' className='btn md:w-auto md:mr-4 btn-primary'>
+                <Link to='' className='btn md:w-auto md:mr-4 btn-primary'>
                     <div className='inline-flex  items-center justify-center w-full h-full'>
                         <p className='mr-3'>See All Jobs</p>
 
