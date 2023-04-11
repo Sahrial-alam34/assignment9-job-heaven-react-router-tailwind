@@ -3,28 +3,28 @@
     "id": "623853b26dfdjfdlddfosba311fdd1",
     "index": 0,
     "title": "Account & Finance",
-    "picture": "/src/assets/Icons/accounts 1.png",
+    "picture": "https://i.ibb.co/FhNB7TX/accounts-1.png",
     "availability": "300 Jobs Available"
     },
     {
     "id": "62398565ftyoitodjfdlddfosba311fdd1",
     "index": 1,
     "title": "Creative Design",
-    "picture": "/src/assets/Icons/business 1.png",
+    "picture": "https://i.ibb.co/7YmZvrz/business-1.png",
     "availability": "100+ Jobs Available"
     },
     {
     "id": "62788985egrerddfosba311fdd1",
     "index": 2,
     "title": "Marketing & Sales",
-    "picture": "/src/assets/Icons/social-media 1.png",
+    "picture": "https://i.ibb.co/hLKcwVY/social-media-1.png",
     "availability": "150 Jobs Available"
     },
     {
     "id": "4798758626ddfdfdsdwwedlddfosba311fdd1",
     "index": 3,
     "title": "Engineering Job",
-    "picture": "/src/assets/Icons/chip 1.png",
+    "picture": "https://i.ibb.co/pvX3xGF/chip-1.png",
     "availability": "224 Jobs Available"
     }
 ]

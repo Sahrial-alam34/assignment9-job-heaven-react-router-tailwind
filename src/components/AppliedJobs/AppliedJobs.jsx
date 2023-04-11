@@ -8,9 +8,9 @@ import { CheckIcon, ChevronUpDownIcon } from '@heroicons/react/20/solid'
 
 
 const people = [
-    { name: 'Recent' },
-    { name: 'Ascending' },
-    { name: 'Descending' },
+    { name: 'Remote' },
+    { name: 'Full Time' },
+    { name: 'OnSite' },
     
 ]
 

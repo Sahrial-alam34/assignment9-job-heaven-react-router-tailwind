@@ -44,11 +44,11 @@ const CartItem = ({ jobInfo }) => {
                             </div>
                             <div className='flex justify-between mb-5'>
                                 <div className='flex gap-3 mt-4'>
-                                    <img src="/src/assets/Icons/Frame-4.png" alt="" />
+                                <img src="https://i.ibb.co/3v3pwp6/Frame-4.png" alt="Frame-4" border="0"/>
                                     <p className="text-gray"><small>{location}</small></p>
                                 </div>
                                 <div className='flex gap-3 mt-4'>
-                                    <img src="/src/assets/Icons/Frame.png" alt="" />
+                                <img src="https://i.ibb.co/v3xCGcr/Frame.png" alt="Frame" border="0"/>
                                     <p className="text-gray"><small>{salary}</small></p>
                                 </div>
 

@@ -49,12 +49,12 @@ const JobDetails = () => {
                         <hr className='border-solid border-cyan-700' />
                         <div>
                             <div className='flex gap-3 mt-4'>
-                                <img src="/src/assets/Icons/Frame.png" alt="" />
+                            <img src="https://i.ibb.co/v3xCGcr/Frame.png" alt="Frame" border="0"/>
                                 <p><span className='font-bold'>Salary:</span> <small>{jobInfo.salary}</small></p>
 
                             </div>
                             <div className='flex gap-3 mt-4'>
-                                <img src="/src/assets/Icons/Frame-1.png" alt="" />
+                            <img src="https://i.ibb.co/z7D278N/Frame-1.png" alt="Frame-1" border="0"/>
                                 <p><span className='font-bold'>Job Title:</span> <small>{jobInfo.title}</small></p>
 
                             </div>
@@ -66,17 +66,17 @@ const JobDetails = () => {
                         <hr className='border-solid border-cyan-700' />
                         <div>
                             <div className='flex gap-3 mt-4'>
-                                <img src="/src/assets/Icons/Frame-2.png" alt="" />
+                            <img src="https://i.ibb.co/N3B1mkk/Frame-2.png" alt="Frame-2" border="0"/>
                                 <p><span className='font-bold'>Phone:</span> <small>{jobInfo.phone}</small></p>
 
                             </div>
                             <div className='flex gap-3 mt-4'>
-                                <img src="/src/assets/Icons/Frame-3.png" alt="" />
+                            <img src="https://i.ibb.co/XS5WQMq/Frame-3.png" alt="Frame-3" border="0"/>
                                 <p><span className='font-bold'>Email:</span> <small>{jobInfo.email}</small></p>
 
                             </div>
                             <div className='flex gap-3 mt-4'>
-                                <img src="/src/assets/Icons/Frame-4.png" alt="" />
+                            <img src="https://i.ibb.co/3v3pwp6/Frame-4.png" alt="Frame-4" border="0"/>
                                 <p><span className='font-bold'>Address:</span> <small>{jobInfo.address}</small></p>
 
                             </div>
