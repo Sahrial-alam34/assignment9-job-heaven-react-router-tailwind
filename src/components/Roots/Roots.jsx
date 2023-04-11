@@ -5,12 +5,15 @@ import Footer from '../Footer/Footer';
 
 
 const Roots = () => {
-   
+
     return (
         <div>
             <Header></Header>
-            <Outlet></Outlet>
-           
+            <div className='min-h-[calc(100vh-171px)]'>
+                <Outlet></Outlet>
+            </div>
+            <Footer></Footer>
+
         </div>
     );
 };

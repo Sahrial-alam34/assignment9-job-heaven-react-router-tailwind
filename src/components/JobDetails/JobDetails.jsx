@@ -32,7 +32,7 @@ const JobDetails = () => {
     return (
         <div>
             <div className='bg-slate-100 h-32 justify-center mb-20'>
-                <h2 className='text-5xl font-bold mt-25 text-center pt-10 '>
+                <h2 className='text-5xl font-bold lg:mt-25 text-center lg:pt-10 '>
                     Job Details : {jobInfo.name}
                 </h2>
             </div>
@@ -91,7 +91,7 @@ const JobDetails = () => {
 
             </div>
 
-            <div className='text-right'>
+            <div className='text-right mb-5'>
 
                 <button onClick={() => handleAddToCart(jobInfo.id)} type='button' className='btn-primary w-full lg:w-[350px]'>
                     Apply Now
@@ -102,7 +102,7 @@ const JobDetails = () => {
 
             <Link
             to='/'
-            className='px-8 py-3 font-semibold rounded bg-cyan-200 text-gray-900'
+            className='px-8 py-3 font-semibold rounded  bg-cyan-200 text-gray-900'
           >
             Back to Homepage
           </Link>
